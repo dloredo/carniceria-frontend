@@ -132,9 +132,9 @@ export const navItems: NavItem[] = [
   },
   {
     title: 'Compras y gastos',
-    href: '/dashboard/point-of-sale',
+    href: '/dashboard/compras-y-gastos',
     icon: 'page',
-    label: 'point-of-sale'
+    label: 'compras-y-gastos'
   },
   {
     title: 'Proveedores',

@@ -3,7 +3,7 @@ import { Input } from '../ui/input';
 
 export default function ProductCard({ product }: { product: any }) {
   return (
-    <Card className="flex items-center justify-between rounded-lg p-4 shadow-md">
+    <Card className="flex items-center justify-between rounded-lg p-4 shadow-sm">
       <div className="flex items-center">
         <div>
           <h3 className="text-md font-medium">{product.name}</h3>

@@ -10,8 +10,25 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
+import { Separator } from '@/components/ui/separator';
+import { Payment, columns } from './columns';
+import { DataTable } from './data-table';
 
-export default function ComprasGastosPage() {
+async function getData(): Promise<Payment[]> {
+  // Fetch data from your API here.
+  return [
+    {
+      id: '728ed52f',
+      amount: 100,
+      status: 'pending',
+      email: 'm@example.com'
+    }
+  ];
+}
+
+export default async function ComprasGastosPage() {
+  const data = await getData();
+
   return (
     <div className="flex-1 space-y-4 p-4 pt-6 md:p-8">
       <BreadCrumb
@@ -44,6 +61,7 @@ export default function ComprasGastosPage() {
                 </div>
               </DropdownMenuItem>
             </Link>
+            <Separator />
             <Link href="/dashboard/compras-y-gastos">
               <DropdownMenuItem className="flex cursor-pointer items-center space-x-2">
                 <ShoppingBag className="mr-2 h-4 w-4" />
@@ -59,6 +77,7 @@ export default function ComprasGastosPage() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
+      <DataTable columns={columns} data={data} />
     </div>
   );
 }

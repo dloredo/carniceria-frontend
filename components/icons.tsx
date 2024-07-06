@@ -28,12 +28,20 @@ import {
   User,
   User2Icon,
   UserX2Icon,
-  X
+  X,
+  ShoppingBag,
+  Contact,
+  Tag,
+  BadgeDollarSign
 } from 'lucide-react';
 
 export type Icon = LucideIcon;
 
 export const Icons = {
+  pos: BadgeDollarSign,
+  productos: Tag,
+  clientes: Contact,
+  compras: ShoppingBag,
   dashboard: LayoutDashboardIcon,
   logo: Command,
   login: LogIn,

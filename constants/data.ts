@@ -121,19 +121,19 @@ export const navItems: NavItem[] = [
   {
     title: 'Productos',
     href: '/dashboard/productos',
-    icon: 'page',
+    icon: 'productos',
     label: 'productos'
   },
   {
     title: 'POS',
     href: '/dashboard/point-of-sale',
-    icon: 'page',
+    icon: 'pos',
     label: 'point-of-sale'
   },
   {
     title: 'Compras y gastos',
     href: '/dashboard/compras-y-gastos',
-    icon: 'page',
+    icon: 'compras',
     label: 'compras-y-gastos'
   },
   {
@@ -145,7 +145,7 @@ export const navItems: NavItem[] = [
   {
     title: 'Clientes',
     href: '/dashboard/clientes',
-    icon: 'page',
+    icon: 'clientes',
     label: 'clientes'
   },
   {

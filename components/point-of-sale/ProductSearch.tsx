@@ -13,7 +13,7 @@ export default function ProductSearch() {
           <Input placeholder="Buscar por nombre, categoría, SKU o código de barras" />
         </CardContent>
       </Card>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Button variant="outline">Crear producto</Button>
         <Button variant="outline">Añadir descuento</Button>
         <Button variant="outline">Entrada manual</Button>
